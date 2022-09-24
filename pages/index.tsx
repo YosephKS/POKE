@@ -1,13 +1,14 @@
 import { Default } from 'components/layouts/Default';
-import { Home } from 'components/templates/home';
-import type { NextPage } from 'next';
+import { NextPage } from 'next';
+import { Mint } from "../src/components/templates/mint/index";
 
-const HomePage: NextPage = () => {
-  return (
-    <Default pageName="Home">
-      <Home />
-    </Default>
-  );
-};
 
-export default HomePage;
+const MintPage: NextPage = () => {
+    return (
+        <Default pageName="Transactions">
+            <Mint />
+        </Default>
+    )
+}
+
+export default MintPage;
